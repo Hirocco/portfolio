@@ -1,0 +1,129 @@
+body{
+    background: url('./images/giphy.gif');
+    backdrop-filter: blur(1px);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+main{
+    display: flexbox;
+    text-align: center;
+    margin-left: auto;
+    margin-top: 0;
+    width: 87%;
+    padding: 1px;
+    height: 100%;
+    color: blue;
+}
+.progress-container {
+    position:fixed;
+    width: 100%;
+    height: 8px;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    background: #080808;
+}
+  /* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 8px;
+    background: #04AA6D;
+    width: 0%;
+  }
+#Home{
+    min-height: 100vh;
+    margin-top: 10px;
+}
+.shiny{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 52px;
+    letter-spacing: normal;
+    color: #FFFFFF;
+    /*Animation*/
+    background-image: -webkit-linear-gradient(left, white 25%, #fde071 37.5%, #ef9671, #996a6e 62.5%, white 75%);
+    background-image: linear-gradient(90deg, white 25%, #fde071 37.5%, #ef9671, #996a6e 62.5%, white 75%);
+    background-position: right center;
+    background-size: 400% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: white;
+    -webkit-text-fill-color: transparent;
+    /*text-fill-color: transparent;*/
+    transition: color 150ms linear;
+}
+.quote{
+    font-family: 'Dancing Script';
+}
+.shiny:hover {
+    background-position: left center;
+    color: #ef9671;
+    transition: background-position 2000ms ease-out;
+}
+.ja-img{
+    border-radius: 100%;
+}
+.card-group{
+    display: flex;
+    padding: 5px;
+    gap: 5%;
+    justify-content: center;
+}
+.card{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: #bb93fc;
+    color: #242329;
+    text-align: center;
+    border: 5px solid #fff;
+    overflow: hidden;
+}
+.card--data{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-250px);
+    transition: transform .5s;
+}
+.card--img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .25s .35s;
+}
+.card--title{
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px;
+    background-color: #242329;
+    margin-top: 25px;
+}
+.card--description{
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.card--btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #242329;
+    background-color: #fff;
+    transition: background-color .25s;
+}
+.card--btn:hover{
+    background-color: #242329;
+    color: #fff;
+}
+.card:hover .card--data{
+    transform: translateY(0px);
+}
+.card:hover .card--img{
+    transform: translateX(250px);
+    transition-delay: 0s;
+}
