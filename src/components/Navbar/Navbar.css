@@ -1,12 +1,11 @@
 nav{
-    position: fixed;
-    margin: 0;
+    position: sticky;
     width: 250px;
     height: 100%;
     top: 0;
+    bottom: 58%;
     left: 0;
     border-radius: 0px 0px 8px 8px;
-    background: #1B1B1B;
 }
 a{
     text-decoration: none;

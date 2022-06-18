@@ -5,21 +5,8 @@ import Form from '../Form/Form';
 
 export default function Home() {
 
-  // When the user scrolls the page, execute myFunction
-  window.onscroll = function() {myFunction()};
-
-  function myFunction() {
-    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    let scrolled = (winScroll / height) * 100;
-    document.getElementById("myBar").style.width = scrolled + "%";
-  }
-
   return (
     <main>
-      <div className="progress-container">
-        <div className="progress-bar" id="myBar"></div>
-      </div>
       <section id='Home'>
         <img className='ja-img' src={ja}/>
         <h1 className='shiny'>Kamil Uchwat - Junior Frontend developer</h1>

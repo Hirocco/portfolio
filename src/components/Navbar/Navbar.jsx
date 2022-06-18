@@ -2,6 +2,7 @@ import './Navbar.css'
 
 export default function Navbar() {
   return (
+  
     <nav>
         <ul className='buttons-list'>
             <a href='#Home'><li className='btn-list'>Home<span></span><span></span><span></span><span></span></li></a>
