@@ -9,12 +9,12 @@ export const projects = [
     id: 0,
   },
   {
-    title: 'IP-tracker',
-    description:"Project in which I had my first experiences with geolocation connected to React.",
-    image: '/images/2.png',
-    tags: ['JavaScript', 'React','Api'],
-    source: 'https://github.com/Hirocco/ip-tracker',
-    /*visit: 'https://vercel.com/hirocco/ip-tracker',*/
+    title: 'Ecommerce - prototype shop',
+    description:"This is my first fullstack project in which I have included many technologies like Stripe (payment), ReactJs,NextJs and sanity db.",
+    image: '/images/ecommerce.png',
+    tags: ['JavaScript', 'React','Api','Next','Sanity','Stripe'],
+    source: 'https://github.com/Hirocco/ecommerce-prototype',
+    visit: 'https://ecommerce-prototype-s2th.vercel.app/',
     id: 1,
   },
   {
@@ -35,14 +35,14 @@ export const projects = [
     visit: 'https://crypto-findrr.vercel.app',
     id: 3,
   },
-  {
+  /*{
     title: 'Sort Visualizer',
     description: "My really first project made with SFML Library and c++, including few sorting algorithms ",
     image: '/images/4.jpg',
     tags: ['C++','SFML'],
     source: 'https://github.com/Hirocco/sortinVisualizerC-',
     id: 4,
-  },
+  },*/
 ];
 
 export const TimeLineData = [
