@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kamil Uchwat - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+      <div class="nav-container">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link">Start</a></li>
+          <li><a href="#about" class="nav-link">About me</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg
+            class="sun-icon"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg
+            class="moon-icon"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-background">
+        <div class="particles"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-name">KAMIL UCHWAT</h1>
+          <p class="hero-tagline" id="tagline"></p>
+          <p class="hero-bio">
+            An ambitious programmer with a passion for technology and
+            algorithms. I specialize in backend development using Python and
+            modern frameworks (FastAPI, Flask, ExpressTS, Vue3). My goal is to
+            build efficient applications and algorithms based on data.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary"
+              >Check out my projects</a
+            >
+            <a
+              href="https://github.com/Hirocco"
+              target="_blank"
+              class="btn btn-secondary"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title" data-animate>About me</h2>
+        <div class="about-content" data-animate>
+          <div class="about-text">
+            <p>
+              Hi! I am <strong>Kamil</strong>, a technology enthusiast
+              with a deep interest in algorithms and backend development. As a
+              3rd year computer science student at the Rzeszów University of
+              Technology, I combine theory with practice, creating solutions
+              that are both efficient and elegant.
+            </p>
+            <p>
+              My specialty is Python and modern frameworks such as FastAPI and
+              Flask. I enjoy the challenges of building scalable APIs,
+              optimizing algorithms and integrating systems. In addition to the
+              backend, I am developing my skills in the area of ​​AI/ML and
+              frontend with Vue3.
+            </p>
+            <p>
+              I am currently working on an
+              <strong>algorithmic stock bot</strong> - a project combining my
+              interests in finance, programming and data analysis.
+            </p>
+          </div>
+          <div class="about-info">
+            <div class="info-card">
+              <h3>Education</h3>
+              <p><strong>Rzeszów University of Technology</strong></p>
+              <p>Computer science, 3rd year</p>
+              <p class="text-muted">2022 – currently</p>
+            </div>
+            <div class="info-card">
+              <h3>Languages</h3>
+              <div class="language-item">
+                <span>Polish</span>
+                <span class="badge">Native</span>
+              </div>
+              <div class="language-item">
+                <span>English</span>
+                <span class="badge">Intermediate/Advanced</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title" data-animate>Technical Skills</h2>
+        <div class="skills-content">
+          <div class="skill-category" data-animate>
+            <h3>Programming Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag" style="--delay: 0s">Python</span>
+              <span class="skill-tag" style="--delay: 0.05s">C++</span>
+              <span class="skill-tag" style="--delay: 0.1s">C#</span>
+              <span class="skill-tag" style="--delay: 0.15s">TypeScript</span>
+              <span class="skill-tag" style="--delay: 0.2s">JavaScript</span>
+              <span class="skill-tag" style="--delay: 0.25s">SQL</span>
+              <span class="skill-tag" style="--delay: 0.3s">Java</span>
+              <span class="skill-tag" style="--delay: 0.35s">C</span>
+            </div>
+          </div>
+          <div class="skill-category" data-animate>
+            <h3>Frameworks &amp; Libraries that I worked with</h3>
+            <div class="skill-tags">
+              <span class="skill-tag" style="--delay: 0s">FastAPI</span>
+              <span class="skill-tag" style="--delay: 0.05s">ExpressTS</span>
+              <span class="skill-tag" style="--delay: 0.1s">Vue3</span>
+              <span class="skill-tag" style="--delay: 0.15s">Flask</span>
+              <span class="skill-tag" style="--delay: 0.2s">.NET</span>
+              <span class="skill-tag" style="--delay: 0.25s">TensorFlow</span>
+              <span class="skill-tag" style="--delay: 0.3s">Keras</span>
+            </div>
+          </div>
+          <div class="skill-category" data-animate>
+            <h3>Databases</h3>
+            <div class="skill-tags">
+              <span class="skill-tag" style="--delay: 0s">MySQL</span>
+              <span class="skill-tag" style="--delay: 0.05s">PostgreSQL</span>
+              <span class="skill-tag" style="--delay: 0.1s">SSMS</span>
+            </div>
+          </div>
+          <div class="skill-category" data-animate>
+            <h3>Tools &amp; technologies</h3>
+            <div class="skill-tags">
+              <span class="skill-tag" style="--delay: 0s">Git</span>
+              <span class="skill-tag" style="--delay: 0.05s">REST API</span>
+              <span class="skill-tag" style="--delay: 0.1s">GitHub</span>
+              <span class="skill-tag" style="--delay: 0.15s"
+                >Entity Framework</span
+              >
+              <span class="skill-tag" style="--delay: 0.2s">Odoo</span>
+              <span class="skill-tag" style="--delay: 0.25s">Bryntum</span>
+              <span class="skill-tag" style="--delay: 0.3s">MetaTrader 5</span>
+            </div>
+          </div>
+          <div class="skill-category" data-animate>
+            <h3>Specializations</h3>
+            <div class="skill-tags">
+              <span class="skill-tag specialty" style="--delay: 0s">AI/ML</span>
+              <span class="skill-tag specialty" style="--delay: 0.05s"
+                >Algorithms</span
+              >
+              <span class="skill-tag specialty" style="--delay: 0.1s"
+                >CRUD</span
+              >
+              <span class="skill-tag specialty" style="--delay: 0.15s"
+                >Design patterns</span
+              >
+              <span class="skill-tag specialty" style="--delay: 0.2s">NLP</span>
+              <span class="skill-tag specialty" style="--delay: 0.25s"
+                >Authentication APIs</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+      <div class="container">
+        <h2 class="section-title" data-animate>Professional Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item" data-animate>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Intern C# .NET Developer</h3>
+                  <p class="company">E-BI.COM</p>
+                </div>
+                <span class="period">September – October 2024</span>
+              </div>
+              <p class="description">
+                Creating authorization APIs, managing user sessions,
+                tokens and data security. Building a web-based application
+                o Repository + MVC pattern.
+              </p>
+              <button class="expand-btn" onclick="toggleExpand(this)">
+                See more
+              </button>
+              <ul class="achievements">
+                <li>Developed user authentication mechanisms from scratch</li>
+                <li>
+                  Implemented token management logic (access/refresh tokens)
+                </li>
+                <li>
+                  Built full-stack web application using Repository pattern and
+                  MVC
+                </li>
+                <li>
+                  Enhanced understanding of project structuring and database
+                  architecture
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item" data-animate>
+            <div class="timeline-marker completed"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Frontend/Backend Developer for Aptiv (Cracow)</h3>
+                  <p class="company">
+                    Rzeszów University of Technology (Contractor)
+                  </p>
+                  <span class="status-badge completed">Completed</span>
+                </div>
+                <span class="period">February – April 2025</span>
+              </div>
+              <p class="description">
+                Project made for the Aptiv corporation under contract
+                university. Resource planning module based on the library
+                Bryntum.
+              </p>
+              <button class="expand-btn" onclick="toggleExpand(this)">
+                See more
+              </button>
+              <ul class="achievements">
+                <li>Completed project for Aptiv corporation</li>
+                <li>Created resource planning module using Bryntum library</li>
+                <li>Integrated frontend with backend systems</li>
+                <li>Status: Project completed successfully</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item" data-animate>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Intern Python Developer</h3>
+                  <p class="company">IDEA COMMERCE S.A</p>
+                </div>
+                <span class="period">February – March 2024</span>
+              </div>
+              <p class="description">
+                Working with PostgreSQL, XML, Odoo. Creating an invoice module
+                associated with sales orders.
+              </p>
+              <button class="expand-btn" onclick="toggleExpand(this)">
+                See more
+              </button>
+              <ul class="achievements">
+                <li>
+                  First experience with PostgreSQL, XML, and Odoo framework
+                </li>
+                <li>Created module for adding notes to invoices</li>
+                <li>Connected invoice notes to sale orders</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item" data-animate>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>AI Projects Member</h3>
+                  <p class="company">SKNI KOD – Students Science Club</p>
+                </div>
+                <span class="period">2022 – currently</span>
+              </div>
+              <p class="description">
+                AI projects related to natural language processing and
+                computer vision.
+              </p>
+              <button class="expand-btn" onclick="toggleExpand(this)">
+                See more
+              </button>
+              <ul class="achievements">
+                <li>AI model for translating sign language into text</li>
+                <li>Document classifier using NLP and neural networks</li>
+                <li>Focus on model creation and data preparation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title" data-animate>Projects &amp; Portfolio</h2>
+        <div class="projects-grid">
+          <div
+            class="project-card featured"
+            data-animate
+            onclick="openProjectModal('project0')"
+          >
+            <div class="project-icon">💹</div>
+            <span class="status-badge in-progress">In Progress</span>
+            <h3>Algorithmic Stock Bot</h3>
+            <p>A system for algorithmic trading on the CFD market</p>
+            <div class="tech-tags">
+              <span>FastAPI</span>
+              <span>ExpressTS</span>
+              <span>Vue3</span>
+              <span>MT5</span>
+            </div>
+          </div>
+          <div
+            class="project-card"
+            data-animate
+            onclick="openProjectModal('project1')"
+          >
+            <div class="project-icon">🗺️</div>
+            <span class="status-badge completed">Completed</span>
+            <h3>Pathfinding Visualizer</h3>
+            <p>Visualization of Dijkstra and A* algorithms</p>
+            <div class="tech-tags">
+              <span>C++</span>
+              <span>SFML</span>
+            </div>
+          </div>
+          <div
+            class="project-card"
+            data-animate
+            onclick="openProjectModal('project2')"
+          >
+            <div class="project-icon">🧠</div>
+            <span class="status-badge completed">Completed</span>
+            <h3>Neural Network for NLP</h3>
+            <p>NLP model built from scratch</p>
+            <div class="tech-tags">
+              <span>Python</span>
+              <span>NumPy</span>
+            </div>
+          </div>
+          <div
+            class="project-card"
+            data-animate
+            onclick="openProjectModal('project3')"
+          >
+            <div class="project-icon">🏠</div>
+            <span class="status-badge in-progress">Completed</span>
+            <h3>Full Stack App – Otodom Clone</h3>
+            <p>A clone of the Otodom platform with REST API</p>
+            <div class="tech-tags">
+              <span>Flask</span>
+              <span>MySQL</span>
+              <span>REST API</span>
+            </div>
+          </div>
+          <div
+            class="project-card"
+            data-animate
+            onclick="openProjectModal('project5')"
+          >
+            <div class="project-icon">✋</div>
+            <span class="status-badge completed">Completed</span>
+            <h3>Hand Movement Recognition AI</h3>
+            <p>AI model for recognizing hand movements</p>
+            <div class="tech-tags">
+              <span>Python</span>
+              <span>Keras</span>
+              <span>TensorFlow</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title" data-animate>Contact</h2>
+        <div class="contact-content" data-animate>
+          <div class="contact-info">
+            <div class="contact-item">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:kamil.uchwat19@gmail.com"
+                  >kamil.uchwat19@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+              <div>
+                <h4>Phone/Whatsapp</h4>
+                <a href="tel:+48534380081">+48 534 380 081</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+              <div>
+                <h4>GitHub</h4>
+                <a href="https://github.com/Hirocco" target="_blank"
+                  >github.com/Hirocco</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="contact-cta">
+            <button class="btn btn-primary btn-large" onclick="downloadCV()">
+              Download CV
+            </button>
+            <p class="cv-note">CV PDF available on request</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Kamil Uchwat. All rights reserved.</p>
+        <button id="backToTop" class="back-to-top" aria-label="Back to top">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M18 15l-6-6-6 6" />
+          </svg>
+        </button>
+      </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeProjectModal()">
+          &times;
+        </button>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
