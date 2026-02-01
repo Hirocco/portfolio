@@ -88,7 +88,7 @@ function animateOnScroll() {
     },
     {
       threshold: 0.1,
-    }
+    },
   );
 
   elements.forEach((element) => {
@@ -173,6 +173,7 @@ const projects = [
       "Multi-layer architecture for scalability",
     ],
     goal: "Building a multi-layer bot based on data and trading rules",
+    link: "https://github.com/Hirocco/bot_api",
   },
   {
     id: "project1",
@@ -189,6 +190,7 @@ const projects = [
       "Interactive user interface",
       "Possibility to draw your own obstacles",
     ],
+    link: "https://github.com/Hirocco/pathfinding",
   },
   {
     id: "project2",
@@ -205,6 +207,7 @@ const projects = [
       "Backpropagation and gradient descent implemented manually",
       "Analysis and visualization of the learning process",
     ],
+    link: "https://github.com/Hirocco/spam_ham_classifier",
   },
   {
     id: "project3",
@@ -221,6 +224,24 @@ const projects = [
       "Advanced filtering and search",
       "Role: Backend team leader",
     ],
+    link: "https://github.com/StefanSudyk/DATABASE_SOFTWARE_ENGINEERING_PROJECT",
+  },
+  {
+    id: "project4",
+    icon: "🤖",
+    title: "AI Agent System – Scaling Concurrent Sessions",
+    status: "Completed",
+    description:
+      "A robust backend system designed to manage multiple autonomous AI agents using Anthropic's Computer Use. The application features a non-blocking architecture that allows multiple independent sessions to interact with a shared virtual environment simultaneously. Repository is currently private.",
+    tech: ["FastAPI", "WebSockets", "SQLite", "Docker", "Claude AI"],
+    features: [
+      "Layered Architecture (Controller-Service-Business Logic)",
+      "Non-blocking concurrency handling with dynamic worker spawning",
+      "Real-time streaming of agent thoughts and tool executions via WebSockets",
+      "Advanced browser isolation using unique session profiles to prevent resource locking",
+      "Full session persistence and chat history management",
+    ],
+    link: "https://github.com/Hirocco/claude-computer-use-fix-fastapi",
   },
   {
     id: "project5",
@@ -237,6 +258,7 @@ const projects = [
       "Image preprocessing and data augmentation",
       "High recognition accuracy",
     ],
+    link: "https://github.com/skni-kod/AIIR",
   },
 ];
 
@@ -282,6 +304,11 @@ function openProjectModal(projectId) {
     `
         : ""
     }
+    <div class="modal-footer" style="margin-top: 2rem; text-align: center;">
+      <a href="${project.link}" target="_blank" class="btn btn-primary">
+        Repository
+      </a>
+    </div>
   `;
 
   modal.classList.add("active");
@@ -326,11 +353,10 @@ function downloadCV() {
     })
     .catch(() => {
       alert(
-        "PDF CV available on request.\n\nContact me:\nEmail: kamil.uchwat19@gmail.com\nPhone: +48 534 380 081\n\nWhat can I prepare for you:\n✓ Current CV in PDF format\n✓ Project portfolio\n"
+        "PDF CV available on request.\n\nContact me:\nEmail: kamil.uchwat19@gmail.com\nPhone: +48 534 380 081\n\nWhat can I prepare for you:\n✓ Current CV in PDF format\n✓ Project portfolio\n",
       );
     });
 }
-
 
 // Initialize everything when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
